@@ -1,0 +1,18 @@
+File di istruzioni per eseguire l'applicazione progettata.
+
+1) Eseguire RunAuctionHouse
+2) Eseguire SellerMain
+3) Eseguire BuyerMain tante volte quanto il numero prefissato di acquirenti ( ogni main del buyer fa partire un BuyerThread)
+
+Il numero prefissato di acquirenti è 3, ed è registrato in Utilities.MAX_BUYER.
+
+Per eseguire l'applicazione da locale, e quindi non ricevere sulla stessa console video i messaggi di tutti, si consiglia di:
+- eseguire RunAuctionHouse e SellerMain da ECLIPSE, così da stampare a video nella console dell'IDE i messaggi del Seller
+- aprire tanti terminali quanti buyers sono necessari per far partire l'asta, ed eseguire
+	java -jar I-BayProject/src/Buyer/BuyerMain.jar
+	
+Breve descrizione dei package:
+* Item: contiene le classi relativa agli articoli in vendita (solo ItemID)
+* Buyer: contiene le classi di gestione relative ad un acquirente
+* Seller: contiene le classi di gestione relative ad un venditore
+* Utilities: contiene le classi comuni, di utilità per tutte le entità
