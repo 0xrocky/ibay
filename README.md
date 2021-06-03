@@ -1,2 +1,3 @@
-# ibay-prj
-Project of distributed system laboratory
+# Ibay
+
+Project of the Distributed Systems course.
